@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        echo 'Teste de conexão jenkins'
+        echo 'Teste de conexÃ£o jenkins'
         sleep(time: 10, unit: 'SECONDS')
       }
     }
@@ -12,13 +12,13 @@ pipeline {
       steps {
         echo 'iniciando teste'
         sleep(time: 10, unit: 'MINUTES')
-        build(job: 'free-style', propagate: true)
+        build(job: 'teste_unitario', propagate: true)
       }
     }
 
     stage('deploy') {
       steps {
-        mail(to: 'kaioportela10@gmail.com', subject: 'teste de conex�o', body: 'Realizando um teste para saber se est� tudo ok!!!')
+        mail(to: 'kaioportela10@gmail.com', subject: 'teste de conexão', body: 'Realizando um teste para saber se está tudo ok!!!')
       }
     }
 

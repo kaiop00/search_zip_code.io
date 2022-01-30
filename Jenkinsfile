@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('inicializando') {
       steps {
-        echo 'Teste de conexão jenkins'
+        echo 'Teste de conexÃ£o jenkins'
+        sleep 5
       }
     }
 
